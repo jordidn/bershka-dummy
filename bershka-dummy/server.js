@@ -22,7 +22,7 @@ app.get('/content-cms/forms/*', function (req, res) {
 	var relativePath = removeStore(req.path)
 	var path = __dirname + '/static' + relativePath + '.json';
 	fs.readFile(path, 'utf8', function (err, data) {
-		if (err) throw err;
+		if (err) res.status(409).send({ message: 'File not found' });
 		res.send(JSON.parse(data));
 	});
 });
