@@ -8,7 +8,7 @@
                     {
                         "id": "",
                         "type": "layout|text",
-                        "value": "{mainFooter_newsletter_baseline_male}",
+                        "value": "{mainFooter_newsletter_baseline_male_male}",
                         "align": "left",
                         "width": 1,
                         "attributes": [],
@@ -79,6 +79,17 @@
                 ],
                 [
                     {
+                        "type": "layout|text",
+                        "value": "{mainFooter_newsletter_modal_form_gender}",
+                        "align": "left",
+                        "width": 1,
+                        "attributes": [],
+                        "group": null,
+                        "tags": []
+                    }
+                ],
+                [
+                    {
                         "id": "gender",
                         "type": "input|groups",
                         "name": "{mainFooter_newsletter_modal_form_gender}",
@@ -91,7 +102,7 @@
                         "attributes": [
                             {
                                 "key": "fullWidth",
-                                "value": true
+                                "value": false
                             }
                         ],
                         "group": null,
