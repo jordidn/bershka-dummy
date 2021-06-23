@@ -8,7 +8,7 @@
                     {
                         "id": "",
                         "type": "layout|text",
-                        "value": "{mainFooter_newsletter_baseline_male_male}",
+                        "value": "{mainFooter_newsletter_baseline_male}",
                         "align": "left",
                         "width": 1,
                         "attributes": [],
