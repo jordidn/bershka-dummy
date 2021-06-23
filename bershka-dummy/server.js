@@ -12,6 +12,8 @@ var PORT = process.env.PORT || 3000;
 // MARK: - Middleware
 app.use(middleware.logger);
 
+
+// MARK: - Proceess Requests
 app.get('/content-cms/forms/*', function (req, res) {
 	function removeStore(the_url) {
 		var the_arr = the_url.split('/');

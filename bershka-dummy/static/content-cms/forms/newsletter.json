@@ -29,6 +29,7 @@
                 [
                     {
                         "id": "email",
+                        "type": "input|text",
                         "name": "{mainFooter_newsletter_form_label}",
                         "value": "",
                         "hidden": false,
