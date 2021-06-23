@@ -1,0 +1,159 @@
+{
+    "id": "newsletter",
+    "sections": [
+        {
+            "sectionName": "subscribe",
+            "content": [
+                [
+                    {
+                        "type": "layout|text",
+                        "value": "{mainFooter_newsletter_baseline_male}",
+                        "align": "left",
+                        "width": 1,
+                        "attributes": {},
+                        "group": "male",
+                        "tags": []
+                    },
+                    {
+                        "type": "layout|text",
+                        "value": "{mainFooter_newsletter_baseline_female}",
+                        "align": "left",
+                        "width": 1,
+                        "attributes": {},
+                        "group": "female",
+                        "tags": []
+                    }
+                ],
+                [
+                    {
+                        "id": "email",
+                        "type": "input|text",
+                        "name": "{mainFooter_newsletter_form_label}",
+                        "value": "",
+                        "hidden": false,
+                        "keyboard": "email",
+                        "align": "left",
+                        "width": 1,
+                        "validations": [
+                            {
+                                "type": "required"
+                            },
+                            {
+                                "type": "email"
+                            }
+                        ],
+                        "helperText": null,
+                        "attributes": {},
+                        "group": null,
+                        "tags": []
+                    }
+                ],
+                [
+                    {
+                        "type": "layout|text",
+                        "value": "{mainFooter_newsletter_modal_form_yourBirthdate}",
+                        "align": "left",
+                        "width": 1,
+                        "attributes": {},
+                        "group": null,
+                        "tags": []
+                    }
+                ],
+                [
+                    {
+                        "id": "birthday",
+                        "type": "input|birthday",
+                        "name": "{fecha_pendiente_literal}",
+                        "value": "",
+                        "hidden": false,
+                        "align": "left",
+                        "width": 1,
+                        "validations": [
+                            {
+                                "type": "date"
+                            }
+                        ],
+                        "helperText": null,
+                        "attributes": {},
+                        "group": null,
+                        "tags": []
+                    }
+                ],
+                [
+                    {
+                        "id": "gender",
+                        "type": "input|groups",
+                        "name": "{mainFooter_newsletter_modal_form_gender}",
+                        "value": "",
+                        "hidden": false,
+                        "align": "left",
+                        "width": 1,
+                        "validations": [],
+                        "helperText": null,
+                        "attributes": {
+                            "fullWidth": true
+                        },
+                        "group": null,
+                        "tags": []
+                    }
+                ]
+            ],
+            "attributes": {}
+        }
+    ],
+    "footer": [
+        [
+            {
+                "id": "privacyPolicyAccepted",
+                "type": "input|gdpr",
+                "name": "{mainFooter_newsletter_modal_form_privacyText}",
+                "value": false,
+                "hidden": false,
+                "align": "left",
+                "width": 1,
+                "validations": [
+                    {
+                        "type": "requiredTC"
+                    }
+                ],
+                "helperText": null,
+                "attributes": {
+                    "openLayer1": "https://static.bershka.net/4/static/itxwebstandard/docs/layer1/en_ES_2.html",
+                    "ppPdf": "https://static.bershka.net/4/static/itxwebstandard/docs/privacypolicy/privacy_policy_en_ES.pdf"
+                },
+                "group": null,
+                "tags": []
+            }
+        ],
+        [
+            {
+                "id": "submit",
+                "type": "button|submit",
+                "name": "{mainFooter_newsletter_modal_form_submit}",
+                "value": "",
+                "align": "center",
+                "width": 1,
+                "helperText": null,
+                "attributes": {
+                    "disabledUnlessValid": false,
+                    "fullWidth": true
+                },
+                "group": null,
+                "tags": []
+            }
+        ]
+    ],
+    "groups": [
+        {
+            "name": "{gender_male}",
+            "value": "male",
+            "tags": []
+        },
+        {
+            "name": "{gender_female}",
+            "value": "female",
+            "tags": []
+        }
+    ],
+    "title": "{mainFooter_newsletter_title}"
+}
