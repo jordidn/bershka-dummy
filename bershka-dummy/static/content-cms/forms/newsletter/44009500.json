@@ -6,21 +6,13 @@
             "content": [
                 [
                     {
+                        "id": "",
                         "type": "layout|text",
                         "value": "{mainFooter_newsletter_baseline_male}",
                         "align": "left",
                         "width": 1,
-                        "attributes": {},
-                        "group": "male",
-                        "tags": []
-                    },
-                    {
-                        "type": "layout|text",
-                        "value": "{mainFooter_newsletter_baseline_female}",
-                        "align": "left",
-                        "width": 1,
-                        "attributes": {},
-                        "group": "female",
+                        "attributes": [],
+                        "group": null,
                         "tags": []
                     }
                 ],
@@ -43,7 +35,7 @@
                             }
                         ],
                         "helperText": null,
-                        "attributes": {},
+                        "attributes": [],
                         "group": null,
                         "tags": []
                     }
@@ -54,7 +46,7 @@
                         "value": "{mainFooter_newsletter_modal_form_yourBirthdate}",
                         "align": "left",
                         "width": 1,
-                        "attributes": {},
+                        "attributes": [],
                         "group": null,
                         "tags": []
                     }
@@ -63,18 +55,14 @@
                     {
                         "id": "birthday",
                         "type": "input|birthday",
-                        "name": "{fecha_pendiente_literal}",
+                        "name": "{mainFooter_newsletter_modal_form_yourBirthdate}",
                         "value": "",
                         "hidden": false,
                         "align": "left",
                         "width": 1,
-                        "validations": [
-                            {
-                                "type": "date"
-                            }
-                        ],
+                        "validations": [],
                         "helperText": null,
-                        "attributes": {},
+                        "attributes": [],
                         "group": null,
                         "tags": []
                     }
@@ -90,23 +78,26 @@
                         "width": 1,
                         "validations": [],
                         "helperText": null,
-                        "attributes": {
-                            "fullWidth": true
-                        },
+                        "attributes": [
+                            {
+                                "key": "fullWidth",
+                                "value": true
+                            }
+                        ],
                         "group": null,
                         "tags": []
                     }
                 ]
             ],
-            "attributes": {}
+            "attributes": []
         }
     ],
     "footer": [
         [
             {
                 "id": "privacyPolicyAccepted",
-                "type": "input|gdpr",
-                "name": "{mainFooter_newsletter_modal_form_privacyText}",
+                "type": "input|checkbox",
+                "name": "{gdprTexts_register_2}",
                 "value": false,
                 "hidden": false,
                 "align": "left",
@@ -117,10 +108,12 @@
                     }
                 ],
                 "helperText": null,
-                "attributes": {
-                    "openLayer1": "https://static.bershka.net/4/static/itxwebstandard/docs/layer1/en_ES_2.html",
-                    "ppPdf": "https://static.bershka.net/4/static/itxwebstandard/docs/privacypolicy/privacy_policy_en_ES.pdf"
-                },
+                "attributes": [
+                    {
+                        "key": "ppPdf",
+                        "value": "docs/privacypolicy/privacy_policy_en_ES.pdf"
+                    }
+                ],
                 "group": null,
                 "tags": []
             }
@@ -134,10 +127,16 @@
                 "align": "center",
                 "width": 1,
                 "helperText": null,
-                "attributes": {
-                    "disabledUnlessValid": false,
-                    "fullWidth": true
-                },
+                "attributes": [
+                    {
+                        "key": "disabledUnlessValid",
+                        "value": false
+                    },
+                    {
+                        "key": "fullWidth",
+                        "value": true
+                    }
+                ],
                 "group": null,
                 "tags": []
             }
@@ -155,5 +154,5 @@
             "tags": []
         }
     ],
-    "title": "{mainFooter_newsletter_title}"
+    "title": "{mainFooter_newsletter_name}"
 }
