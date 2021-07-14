@@ -12,9 +12,11 @@
                         "align": "left",
                         "width": 1,
                         "attributes": [],
-                        "group": "male",
+                        "group": "M",
                         "tags": []
-                    },
+                    }
+                ],
+                [
                     {
                         "id": "",
                         "type": "layout|text",
@@ -22,7 +24,7 @@
                         "align": "left",
                         "width": 1,
                         "attributes": [],
-                        "group": "female",
+                        "group": "F",
                         "tags": []
                     }
                 ],
@@ -52,17 +54,6 @@
                 ],
                 [
                     {
-                        "type": "layout|text",
-                        "value": "{mainFooter_newsletter_modal_form_yourBirthdate}",
-                        "align": "left",
-                        "width": 1,
-                        "attributes": [],
-                        "group": null,
-                        "tags": []
-                    }
-                ],
-                [
-                    {
                         "id": "birthday",
                         "type": "input|birthday",
                         "name": "{mainFooter_newsletter_modal_form_yourBirthdate}",
@@ -70,7 +61,11 @@
                         "hidden": false,
                         "align": "left",
                         "width": 1,
-                        "validations": [],
+                        "validations": [
+                            {
+                                "type": "date"
+                            }
+                        ],
                         "helperText": null,
                         "attributes": [],
                         "group": null,
@@ -79,19 +74,8 @@
                 ],
                 [
                     {
-                        "type": "layout|text",
-                        "value": "{mainFooter_newsletter_modal_form_gender}",
-                        "align": "left",
-                        "width": 1,
-                        "attributes": [],
-                        "group": null,
-                        "tags": []
-                    }
-                ],
-                [
-                    {
                         "id": "gender",
-                        "type": "input|groups",
+                        "type": "input|group",
                         "name": "{mainFooter_newsletter_modal_form_gender}",
                         "value": "",
                         "hidden": false,
@@ -108,72 +92,72 @@
                         "group": null,
                         "tags": []
                     }
+                ],
+                [
+                    {
+                        "id": "privacyPolicyAccepted",
+                        "type": "input|checkbox",
+                        "name": "{gdprTexts_newsletter_noGdpr}",
+                        "value": false,
+                        "hidden": false,
+                        "align": "left",
+                        "width": 1,
+                        "validations": [
+                            {
+                                "type": "requiredTC"
+                            }
+                        ],
+                        "helperText": null,
+                        "attributes": [
+                            {
+                                "key": "ppPdf",
+                                "value": "docs/privacypolicy/privacy_policy_en_TR.pdf"
+                            }
+                        ],
+                        "group": null,
+                        "tags": []
+                    }
+                ],
+                [
+                    {
+                        "id": "submit",
+                        "type": "button|submit",
+                        "name": "{mainFooter_newsletter_modal_form_submit}",
+                        "value": "",
+                        "align": "center",
+                        "width": 1,
+                        "helperText": null,
+                        "attributes": [
+                            {
+                                "key": "disabledUnlessValid",
+                                "value": false
+                            },
+                            {
+                                "key": "fullWidth",
+                                "value": true
+                            }
+                        ],
+                        "group": null,
+                        "tags": []
+                    }
                 ]
             ],
             "attributes": []
         }
     ],
-    "footer": [
-        [
-            {
-                "id": "privacyPolicyAccepted",
-                "type": "input|checkbox",
-                "name": "{gdprTexts_register_2}",
-                "value": false,
-                "hidden": false,
-                "align": "left",
-                "width": 1,
-                "validations": [
-                    {
-                        "type": "requiredTC"
-                    }
-                ],
-                "helperText": null,
-                "attributes": [
-                    {
-                        "key": "ppPdf",
-                        "value": "docs/privacypolicy/privacy_policy_en_ES.pdf"
-                    }
-                ],
-                "group": null,
-                "tags": []
-            }
-        ],
-        [
-            {
-                "id": "submit",
-                "type": "button|submit",
-                "name": "{mainFooter_newsletter_modal_form_submit}",
-                "value": "",
-                "align": "center",
-                "width": 1,
-                "helperText": null,
-                "attributes": [
-                    {
-                        "key": "disabledUnlessValid",
-                        "value": false
-                    },
-                    {
-                        "key": "fullWidth",
-                        "value": true
-                    }
-                ],
-                "group": null,
-                "tags": []
-            }
-        ]
-    ],
     "groups": [
         {
-            "name": "{gender_male}",
-            "value": "male",
+            "name": "{gender_female}",
+            "value": "F",
             "tags": []
         },
         {
-            "name": "{gender_female}",
-            "value": "female",
+            "name": "{gender_male}",
+            "value": "M",
             "tags": []
         }
     ],
-    "title": "{mainFooter_newsletter_name}"
+    "footer": [],
+    "title": "{mainFooter_newsletter_name}",
+    "displayGroupInLayout": true
 }
