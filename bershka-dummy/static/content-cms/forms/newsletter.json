@@ -97,7 +97,7 @@
                     {
                         "id": "privacyPolicyAccepted",
                         "type": "input|checkbox",
-                        "name": "{gdprTexts_newsletter_noGdpr}",
+                        "name": "{gdprTexts_newsletter_1a}",
                         "value": false,
                         "hidden": false,
                         "align": "left",
@@ -111,7 +111,57 @@
                         "attributes": [
                             {
                                 "key": "ppPdf",
-                                "value": "docs/privacypolicy/privacy_policy_en_TR.pdf"
+                                "value": "docs/privacypolicy/privacy_policy_es_ES.pdf"
+                            }
+                        ],
+                        "group": null,
+                        "tags": []
+                    }
+                ],
+                [
+                    {
+                        "id": "privacyPolicyAccepted2",
+                        "type": "input|checkbox",
+                        "name": "{gdprTexts_newsletter_1a}",
+                        "value": false,
+                        "hidden": false,
+                        "align": "left",
+                        "width": 1,
+                        "validations": [
+                            {
+                                "type": "requiredTC"
+                            }
+                        ],
+                        "helperText": null,
+                        "attributes": [
+                            {
+                                "key": "ppPdf",
+                                "value": "docs/privacypolicy/privacy_policy_es_ES.pdf"
+                            }
+                        ],
+                        "group": null,
+                        "tags": []
+                    }
+                ],
+                [
+                    {
+                        "id": "privacyPolicyAccepted3",
+                        "type": "input|checkbox",
+                        "name": "{gdprTexts_newsletter_1a}",
+                        "value": false,
+                        "hidden": false,
+                        "align": "left",
+                        "width": 1,
+                        "validations": [
+                            {
+                                "type": "requiredTC"
+                            }
+                        ],
+                        "helperText": null,
+                        "attributes": [
+                            {
+                                "key": "ppPdf",
+                                "value": "docs/privacypolicy/privacy_policy_es_ES.pdf"
                             }
                         ],
                         "group": null,

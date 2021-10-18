@@ -1,0 +1,243 @@
+{
+    "id": "register",
+    "sections": [
+        {
+            "sectionName": "credentials",
+            "content": [
+                [
+                    {
+                        "id": "email",
+                        "type": "input|text",
+                        "name": "{forms_registerForm_mail}",
+                        "value": "",
+                        "hidden": false,
+                        "keyboard": "email",
+                        "align": "left",
+                        "width": 1,
+                        "validations": [
+                            {
+                                "type": "required"
+                            },
+                            {
+                                "type": "email"
+                            }
+                        ],
+                        "helperText": null,
+                        "attributes": [
+                            {
+                                "key": "pushValue",
+                                "value": "emailConfirm"
+                            }
+                        ],
+                        "group": null,
+                        "tags": []
+                    }
+                ],
+                [
+                    {
+                        "id": "emailConfirm",
+                        "type": "input|text",
+                        "name": "",
+                        "value": "",
+                        "hidden": true,
+                        "keyboard": "default",
+                        "align": "left",
+                        "width": 1,
+                        "validations": [],
+                        "helperText": null,
+                        "attributes": [],
+                        "group": null,
+                        "tags": []
+                    }
+                ],
+                [
+                    {
+                        "id": "password",
+                        "type": "input|password",
+                        "name": "{forms_registerForm_password}",
+                        "value": "",
+                        "hidden": false,
+                        "keyboard": "default",
+                        "align": "left",
+                        "width": 1,
+                        "validations": [
+                            {
+                                "type": "required"
+                            },
+                            {
+                                "type": "password"
+                            }
+                        ],
+                        "helperText": "{forms_registerForm_passwordFormat}",
+                        "attributes": [
+                            {
+                                "key": "showPlain",
+                                "value": true
+                            },
+                            {
+                                "key": "pushValue",
+                                "value": "passwordConfirm"
+                            }
+                        ],
+                        "group": null,
+                        "tags": []
+                    }
+                ],
+                [
+                    {
+                        "id": "gender",
+                        "type": "input|text",
+                        "name": "",
+                        "value": "",
+                        "hidden": true,
+                        "keyboard": "default",
+                        "align": "left",
+                        "width": 1,
+                        "validations": [],
+                        "helperText": null,
+                        "attributes": [],
+                        "group": null,
+                        "tags": []
+                    }
+                ],
+                [
+                    {
+                        "id": "passwordConfirm",
+                        "type": "input|password",
+                        "name": "",
+                        "value": "",
+                        "hidden": true,
+                        "keyboard": "default",
+                        "align": "left",
+                        "width": 1,
+                        "validations": [],
+                        "helperText": null,
+                        "attributes": [
+                            {
+                                "key": "showPlain",
+                                "value": true
+                            }
+                        ],
+                        "group": null,
+                        "tags": []
+                    }
+                ]
+            ],
+            "attributes": []
+        },
+        {
+            "sectionName": "contact",
+            "content": [
+                [
+                    {
+                        "id": "countryCode",
+                        "type": "input|text",
+                        "name": "",
+                        "value": "ES",
+                        "hidden": true,
+                        "keyboard": "default",
+                        "align": "left",
+                        "width": 1,
+                        "validations": [],
+                        "helperText": null,
+                        "attributes": [],
+                        "group": null,
+                        "tags": []
+                    }
+                ],
+                [
+                    {
+                        "id": "countryName",
+                        "type": "input|text",
+                        "name": "",
+                        "value": "España",
+                        "hidden": true,
+                        "keyboard": "default",
+                        "align": "left",
+                        "width": 1,
+                        "validations": [],
+                        "helperText": null,
+                        "attributes": [],
+                        "group": null,
+                        "tags": []
+                    }
+                ]
+            ],
+            "attributes": []
+        }
+    ],
+    "groups": null,
+    "footer": [
+        [
+            {
+                "id": "privacyPolicyAccepted",
+                "type": "input|checkbox",
+                "name": "{gdprTexts_register_2}",
+                "value": false,
+                "hidden": false,
+                "align": "left",
+                "width": 1,
+                "validations": [
+                    {
+                        "type": "requiredTC"
+                    }
+                ],
+                "helperText": null,
+                "attributes": [
+                    {
+                        "key": "ppPdf",
+                        "value": "docs/privacypolicy/privacy_policy_es_ES.pdf"
+                    }
+                ],
+                "group": null,
+                "tags": []
+            }
+        ],
+        [
+            {
+                "id": "newsletter",
+                "type": "input|checkbox",
+                "name": "{gdprTexts_newsletter_1c}",
+                "value": false,
+                "hidden": false,
+                "align": "left",
+                "width": 1,
+                "validations": [],
+                "helperText": null,
+                "attributes": [
+                    {
+                        "key": "ppPdf",
+                        "value": "docs/privacypolicy/privacy_policy_es_ES.pdf"
+                    }
+                ],
+                "group": null,
+                "tags": []
+            }
+        ],
+        [
+            {
+                "id": "submit",
+                "type": "button|submit",
+                "name": "{sessionExpired_goToRegister}",
+                "value": "",
+                "align": "center",
+                "width": 1,
+                "helperText": null,
+                "attributes": [
+                    {
+                        "key": "disabledUnlessValid",
+                        "value": false
+                    },
+                    {
+                        "key": "fullWidth",
+                        "value": true
+                    }
+                ],
+                "group": null,
+                "tags": []
+            }
+        ]
+    ],
+    "title": "{sessionExpired_goToRegister}",
+    "displayGroupInLayout": false
+}
