@@ -14,6 +14,15 @@ app.use(middleware.logger);
 
 
 // MARK: - Proceess Requests
+app.get('/favicon.ico', function(req, res) {
+	res.status(409).send({ message: 'File not found' });
+});
+
+/* 
+Example:
+	PRO: https://www.bershka.com/content-cms/forms/newsletter/44009500?appId=3&countryISO=ES&languageId=-5
+	Dummy: http://localhost:3000/content-cms/forms/newsletter/44009500?appId=3&countryISO=ES&languageId=-5
+*/
 app.get('/content-cms/forms/*', function (req, res) {
 	function removeStore(the_url) {
 		var the_arr = the_url.split('/');
