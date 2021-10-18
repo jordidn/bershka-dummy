@@ -1,0 +1,198 @@
+{
+    "id": "login",
+    "sections": [
+        {
+            "sectionName": "login",
+            "content": [
+                [
+                    {
+                        "id": "phoneEmail",
+                        "type": "input|phoneEmail",
+                        "name": "{forms_loginForm_phoneEmail}",
+                        "value": "",
+                        "hidden": false,
+                        "keyboard": "default",
+                        "align": "left",
+                        "width": 1,
+                        "validations": [
+                            {
+                                "type": "required"
+                            },
+                            {
+                                "type": "phoneEmail",
+                                "format": "^(\\d\\s?){0,10}\\d$",
+                                "caseInsensitive": false,
+                                "unicode": false
+                            }
+                        ],
+                        "helperText": null,
+                        "attributes": [],
+                        "group": null,
+                        "tags": []
+                    }
+                ],
+                [
+                    {
+                        "id": "password",
+                        "type": "input|password",
+                        "name": "{forms_loginForm_password}",
+                        "value": "",
+                        "hidden": false,
+                        "keyboard": "default",
+                        "align": "left",
+                        "width": 1,
+                        "validations": [
+                            {
+                                "type": "required"
+                            }
+                        ],
+                        "helperText": null,
+                        "attributes": [
+                            {
+                                "key": "showPlain",
+                                "value": true
+                            }
+                        ],
+                        "group": null,
+                        "tags": []
+                    }
+                ],
+                [
+                    {
+                        "id": "",
+                        "type": "layout|label",
+                        "value": "{forms_loginForm_forgetPassword}",
+                        "align": "left",
+                        "width": 1,
+                        "attributes": [
+                            {
+                                "key": "margin",
+                                "value": "2"
+                            }
+                        ],
+                        "group": null,
+                        "tags": []
+                    }
+                ]
+            ],
+            "attributes": []
+        }
+    ],
+    "groups": null,
+    "footer": [
+        [
+            {
+                "id": "privacyPolicyAccepted",
+                "type": "input|checkbox",
+                "name": "{gdprTexts_newsletter_1a}",
+                "value": false,
+                "hidden": false,
+                "align": "left",
+                "width": 1,
+                "validations": [
+                    {
+                        "type": "requiredTC"
+                    }
+                ],
+                "helperText": null,
+                "attributes": [
+                    {
+                        "key": "ppPdf",
+                        "value": "docs/privacypolicy/privacy_policy_es_ES.pdf"
+                    }
+                ],
+                "group": null,
+                "tags": []
+            }
+        ],
+        [
+            {
+                "id": "privacyPolicyAccepted2",
+                "type": "input|checkbox",
+                "name": "{gdprTexts_newsletter_1a}",
+                "value": false,
+                "hidden": false,
+                "align": "left",
+                "width": 1,
+                "validations": [
+                    {
+                        "type": "requiredTC"
+                    }
+                ],
+                "helperText": null,
+                "attributes": [
+                    {
+                        "key": "ppPdf",
+                        "value": "docs/privacypolicy/privacy_policy_es_ES.pdf"
+                    }
+                ],
+                "group": null,
+                "tags": []
+            }
+        ],
+        [
+            {
+                "id": "privacyPolicyAccepted3",
+                "type": "input|checkbox",
+                "name": "{gdprTexts_newsletter_1a}",
+                "value": false,
+                "hidden": false,
+                "align": "left",
+                "width": 1,
+                "validations": [
+                    {
+                        "type": "requiredTC"
+                    }
+                ],
+                "helperText": null,
+                "attributes": [
+                    {
+                        "key": "ppPdf",
+                        "value": "docs/privacypolicy/privacy_policy_es_ES.pdf"
+                    }
+                ],
+                "group": null,
+                "tags": []
+            }
+        ],
+        [
+            {
+                "id": "submitLogin",
+                "type": "button|submit",
+                "name": "{forms_loginForm_submit}",
+                "value": "",
+                "align": "center",
+                "width": 1,
+                "helperText": null,
+                "attributes": [
+                    {
+                        "key": "disabledUnlessValid",
+                        "value": false
+                    },
+                    {
+                        "key": "fullWidth",
+                        "value": true
+                    }
+                ],
+                "group": null,
+                "tags": []
+            }
+        ],
+        [
+            {
+                "id": "",
+                "type": "layout|label",
+                "value": "{moreMenuPage_account_noAccount}",
+                "align": "center",
+                "width": 1,
+                "attributes": [],
+                "group": null,
+                "tags": [
+                    "hideSignupByAppId"
+                ]
+            }
+        ]
+    ],
+    "title": null,
+    "displayGroupInLayout": false
+}
