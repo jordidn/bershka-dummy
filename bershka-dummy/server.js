@@ -32,20 +32,33 @@ app.get('/content-cms/forms/*', function (req, res) {
 
 	var relativePath = removeStore(req.path)
 	var path = __dirname + '/static' + relativePath + '.json';
-	fs.readFile(path, 'utf8', function (err, data) {
-		if (err) res.status(409).send({ message: 'File not found' });
-		res.send(JSON.parse(data));
-	});
+	getFile(path, res);
+});
+
+app.get('/3/catalog/store/*/*/productsArray', function (req, res) {
+	var path = __dirname + '/static/catalog/store/productsArray.json';
+	getFile(path, res);
+});
+
+app.get('*/2/catalog/store/*/*/category/*/product/*/detail', function (req, res) {
+	var path = __dirname + '/static/catalog/store/category/product/detail.json';
+	getFile(path, res);
 });
 
 app.get('/*', function (req, res) {
 	var path = __dirname + '/static' + req.path + '.json';
+	getFile(path, res);
+});
+
+
+// MARK: - Handle File
+
+function getFile(path, res) {
 	fs.readFile(path, 'utf8', function (err, data) {
 		if (err) res.status(409).send({ message: 'File not found' });
 		res.send(JSON.parse(data));
 	});
-});
-
+}
 
 // MARK: - Listen port
 app.use(express.static(__dirname + '/static'));
